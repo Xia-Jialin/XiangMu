@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -282,6 +282,7 @@ GameObject:
   - component: {fileID: 102653404}
   - component: {fileID: 102653403}
   - component: {fileID: 102653402}
+  - component: {fileID: 102653406}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -345,13 +346,25 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 102653401}
-  m_LocalRotation: {x: -0.17600296, y: 0.68962246, z: -0.17866294, w: -0.67935514}
-  m_LocalPosition: {x: -93.39774, y: 14.03551, z: 1.5971947}
+  m_LocalRotation: {x: 0.24002503, y: -0.6694253, z: 0.24365082, w: 0.6594635}
+  m_LocalPosition: {x: -108.78, y: 4.16, z: 1.5971947}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 40, y: -90.859, z: 0}
+--- !u!114 &102653406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 102653401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea9ea35c8713e94eb0221a1315f3e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 457978147}
 --- !u!1 &121644661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,6 +1176,10 @@ MeshFilter:
 GameObject:
   m_PrefabParentObject: {fileID: 100088, guid: 3b059b06d05c0e04ba42674f84feac25, type: 3}
   m_PrefabInternal: {fileID: 481698795}
+--- !u!4 &457978147 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400088, guid: 3b059b06d05c0e04ba42674f84feac25, type: 3}
+  m_PrefabInternal: {fileID: 481698795}
 --- !u!195 &457978148
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1195,6 +1212,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30703fc4f4bb20141a1b592c143655d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!143 &457978151
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 457978145}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2.25
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1.13, z: 0}
 --- !u!1 &465991935
 GameObject:
   m_ObjectHideFlags: 0
